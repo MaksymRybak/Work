@@ -1,0 +1,5 @@
+/* Database repos */
+https://github.com/gimmi/adoutils
+
+/* Chats */
+https://github.com/RocketChat/Rocket.Chat
