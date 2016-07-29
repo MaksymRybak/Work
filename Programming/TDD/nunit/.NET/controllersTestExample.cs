@@ -59,7 +59,7 @@ namespace BUM.Tests.Controllers
             areaToAssert.Keys.Should().Contain("prop2");
         }
 		
-		[Test]
+	[Test]
         public void Should_get_response_mock_example()
         {            
             _repository.Setup(r => r.GetData(It.IsAny<Object>())).Returns(testData);
@@ -71,7 +71,7 @@ namespace BUM.Tests.Controllers
             _repository.Verify(r => r.GetData(It.IsAny<Object>()), Times.Once());
         }
 		
-		[TestCase("1")]
+	[TestCase("1")]
         [TestCase("2")]
         public void Should_get_data_to_client_more_cases(string testCase)
         {           
@@ -92,7 +92,7 @@ namespace BUM.Tests.Controllers
             ]")).Should().Be.True();
         }
 		
-		[Test]
+	[Test]
         public void Should_return_bad_request_when_post_wrong_data()
         {
             var json = JToken.Parse(@"{               
@@ -106,8 +106,8 @@ namespace BUM.Tests.Controllers
             response.StatusCode.Should().Be.EqualTo(HttpStatusCode.BadRequest);
         }
 		
-		[Test]
-		public void Should_update_data()
+	[Test]
+	public void Should_update_data()
         {
             _testDbUtils.InsertBudget(_db, testData);
 
@@ -128,5 +128,19 @@ namespace BUM.Tests.Controllers
             record.Get<string>("Desc").Should().Be.EqualTo("test");
             record.Get<Guid>("IdSupplier").Should().Be.EqualTo("01e796d1-032a-48ce-832e-6e2b5e362f03");
         }
+        
+        [Test]
+	public void Should_delete_data()
+	{
+		_testDbUtils.InsertData(data, _db);
+	
+		var apiUrl = "apiUrl/deletecmd";
+		var response = new HttpClient().DeleteAsync(apiUrl).Result;
+	
+		response.Should().Not.Be.Null();
+		response.StatusCode.Should().Be.EqualTo(HttpStatusCode.NoContent);
+	
+		_db.Scalar<int>("select count(*) from Table").Should().Be.EqualTo(0);
+	}
     }
 }
