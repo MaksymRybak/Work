@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Yoda.Releaser.Api.Infrastrucure
+namespace App.Api.Infrastrucure
 {
     internal class QueryStringBuilder : List<Tuple<string, object>>
     {
