@@ -1,0 +1,83 @@
+{
+  "key": "company-hipchat-addon",
+  "name": "company HipChat",
+  "description": "company HipChat addon v 0.0.2",
+  "vendor": {
+    "name": "company S.p.A",
+    "url": "http://company.com"
+  },
+  "links": {
+    "self": "{{localBaseUrl}}/atlassian-connect.json",
+    "homepage": "{{localBaseUrl}}/atlassian-connect.json"
+  },
+  "capabilities": {
+    "hipchatApiConsumer": {
+      "fromName": "company",
+      "scopes": [
+        "admin_room",
+        "send_message",
+        "send_notification",
+        "view_group",
+        "view_room",
+        "view_messages"
+      ]
+    },
+    "installable": {
+      "allowRoom": true,
+      "allowGlobal": false,
+      "callbackUrl": "{{localBaseUrl}}/installable",
+      "updateCallbackUrl": "{{localBaseUrl}}/updated"
+    },
+    "glance": [
+      {
+        "name": {
+          "value": "Send action"
+        },
+        "key": "company.glance.send.action",
+        "target": "company.webpanel.send.action",
+        "icon": {
+          "url": "{{localBaseUrl}}/img/allthethings.png",
+          "url@2x": "{{localBaseUrl}}/img/allthethings.png"
+        }
+      },
+      {
+        "name": {
+          "value": "All action messages"
+        },
+        "key": "company.glance.view.actions",
+        "target": "company.glance.get.actions",
+        "icon": {
+          "url": "{{localBaseUrl}}/img/allthethings.png",
+          "url@2x": "{{localBaseUrl}}/img/allthethings.png"
+        }
+      }
+    ],
+    "webPanel": [
+      {
+        "name": {
+          "value": "Insert new action"
+        },
+        "key": "company.webpanel.send.action",
+        "url": "{{localBaseUrl}}/sidebar/send/action",
+        "location": "hipchat.sidebar.right"
+      },
+      {
+        "name": {
+          "value": "All actions"
+        },
+        "key": "company.glance.get.actions",
+        "url": "{{localBaseUrl}}/sidebar/get/actions",
+        "location": "hipchat.sidebar.right"
+      }
+    ],
+    "webhook": [
+      {
+        "url": "{{localBaseUrl}}/webhook/send-to-piloti",
+        "pattern": "(^)",
+        "event": "room_message",
+        "name": "Send to room Piloti",
+        "authentication": "jwt"
+      }
+    ]
+  }
+}

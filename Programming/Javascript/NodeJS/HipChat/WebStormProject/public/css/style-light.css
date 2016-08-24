@@ -1,0 +1,62 @@
+#send-card-random,
+#send-card-image,
+#send-card-link,
+#send-card-media,
+#send-card-application,
+#send-card-activity,
+#send-card-custom-very {
+  width: 200px;
+}
+
+#send-card-random-result,
+#send-card-image-result,
+#send-card-link-result,
+#send-card-media-result,
+#send-card-application-result,
+#send-card-activity-result,
+#send-card-custom-very-result {
+  margin-left: 20px;
+}
+
+#card-style,
+#card-url,
+#card-id,
+#card-title,
+#card-description,
+#card-icon {
+  max-width: 300px;
+}
+
+#card-json, #message-json, #glance-json, #dialog-json {
+  height: 20em;
+  max-width: 500px;
+  overflow: scroll;
+}
+
+#dialog-params {
+  height: 7em;
+  max-width: 500px;
+  overflow: scroll;
+}
+
+form.sidebar {
+  margin: 10px 0 0 0;
+}
+
+.aui-navgroup-horizontal {
+  padding: 0px;
+}
+
+.aui-navgroup-horizontal .aui-nav > li a {
+  padding: 8px 12px;
+}
+
+.aui-navgroup-horizontal .aui-nav > .aui-nav-selected-custom a {
+  color: #333333;
+  font-weight: bold;
+}
+
+#request-spinner {
+  width: 20px;
+  height: 20px;
+}

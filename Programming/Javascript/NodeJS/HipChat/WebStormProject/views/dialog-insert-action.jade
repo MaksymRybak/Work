@@ -1,0 +1,21 @@
+extends layout
+
+block javascript
+    script(src='/js/dialog-insert-action.js')
+
+block tab
+    div.aui-group
+        div.aui-item
+        div.aui-item
+            span#ajax-status.aui-lozenge.aui-lozenge-subtle ajax status
+
+block content
+    div#page
+        section#content(role='main')
+            div.aui-page-panel(style="margin: 0px; border: 0px;")
+                div.aui-page-panel-inner
+                    section.aui-page-panel-content
+                        form.aui
+                            div.field-group
+                                label(for="action-msg") Action message
+                                textarea#action-msg(class="textarea" rows=4 cols=25)

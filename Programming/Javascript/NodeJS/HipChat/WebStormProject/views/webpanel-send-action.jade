@@ -1,0 +1,25 @@
+extends layout
+
+block javascript
+  script(src='/js/webpanel-send-action.js')
+
+block content
+    div#page
+        section#content(role='main')
+            div.aui-page-panel(style="margin: 0px; border: 0px; min-width: 350px")
+                div.aui-page-panel-inner
+                    section.aui-page-panel-content
+                        div.aui-group
+                            div.aui-item
+                                form.aui.top-label.sidebar
+                                    div.field-group.top-label
+                                    label(for="action-spec").left Insert action specification
+                                    div#request-spinner.left
+                                    textarea#action-spec(class="textarea" rows=4 cols=25)
+
+                                div
+                                    span#action-send-result-error.error
+                                form.aui.sidebar
+                                p
+                                    button#action-send.aui-button Send
+                                    button#action-cancel.aui-button Cancel

@@ -1,0 +1,18 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=EDGE')
+    meta(name='token', content='#{signed_request}')
+    title= title
+    link(rel='stylesheet', href='https://aui-cdn.atlassian.com/aui-adg/5.9.4/css/aui.css')
+    link(rel='stylesheet', href='/css/style-#{theme}.css')
+    link(rel='stylesheet', href='/css/app.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js')
+    script(src='https://aui-cdn.atlassian.com/aui-adg/5.9.4/js/aui.js')
+    script(src='https://aui-cdn.atlassian.com/aui-adg/5.9.4/js/aui-experimental.js')
+    script(src='https://www.hipchat.com/atlassian-connect/all.js')
+    script(src='/js/common.js')
+    block javascript
+  body
+    block content

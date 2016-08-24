@@ -1,0 +1,18 @@
+extends layout
+
+block javascript
+  script(src='/js/webpanel-get-actions.js')
+
+block content
+    div#page
+        section#content(role='main')
+            div.aui-page-panel(style="margin: 0px; border: 0px; min-width: 350px")
+
+                        div.aui-group
+                            div.aui-item
+                                form.aui.top-label.sidebar
+                                    div.app-actions-loading-bar
+                                        div#request-spinner.left
+                                        div#request-loading &nbsp; loading...
+                                    ul#actionlist
+
