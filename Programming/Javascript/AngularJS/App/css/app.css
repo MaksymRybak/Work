@@ -1,0 +1,15 @@
+﻿.app-body {
+    margin: 10px;
+}
+
+.clickable-element {
+    cursor: pointer
+}
+
+.img-glyphicon-check {
+    color: green;
+    vertical-align: middle;
+    font-size: 15pt;
+}
+
+/* todo */

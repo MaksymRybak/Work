@@ -1,0 +1,54 @@
+﻿<div class="panel panel-default">
+    <div class="panel-heading">
+        <label>Feature1</label>
+        <button class="btn btn-success btn-sm pull-right" ng-click="close()">todo</button>
+    </div>
+    <div class="panel-body">
+
+        <div class="col-md-8">
+            <div class="row">
+                <div class="col-md-2">
+                    <label>label:</label>
+                </div>
+                <div class="col-md-3">
+                    <select class="form-control" ng-model="input.modelParam1" ng-options="object.id as object.number for object in model.objects" ng-change="objectChanged()"></select>
+                </div>
+                <div class="col-md-4">
+                    <label>label:</label>
+                </div>
+                <div class="col-md-1">
+                    <input type="checkbox" ng-model="input.modelParam2" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2">
+                    <label>label:</label>
+                </div>
+                <div class="col-md-3">
+                    <textarea class="form-control" ng-model="input.modelParam3"></textarea>
+                </div>
+                <div class="col-md-4">
+                    <label>label:</label>
+                </div>
+                <div class="col-md-1">
+                    <input type="checkbox" ng-model="input.modelParam4" />
+                </div>
+            </div>
+            <div class="row">
+                <feature1-table class="col-md-12" version="{{input.modelParam1}}" enabled-groups="model.enabledGroups" app-types="model.appTypes" on-change="toggleFn(modelParam1, enabled)"></version-release-table>
+            </div>
+        </div>
+        <div class="col-md-4" >
+            <div class="row">
+                <div class="col-md-1">
+                    <span class="glyphicon glyphicon-refresh clickable-element" title="refresh list item"></span>
+                </div>
+            </div>
+            <div class="row col-md-12" style="height: 250px;overflow-y: auto">
+                <list-item items="model.items" on-check="onCheckItem(item)"></list-item>
+            </div>
+        </div>
+    </div>
+</div>
+<button class="btn btn-default pull-right" ng-click="close()">Close</button>

@@ -1,0 +1,36 @@
+﻿<div class="row">
+    <div class="col-md-4">
+        <label>ID</label>
+    </div>
+    <div class="col-md-7">
+        <label>Description</label>
+    </div>
+</div>
+<div ng-repeat="item in items">
+    <div class="row" style="margin-top: 5px">
+        <div class="col-md-4" >
+            <input type="checkbox" ng-change="toggleCheckedItem(item)" ng-model="item.checked" style="margin-right: 10px">{{item.id}}
+        </div>
+        <div class="col-md-7">
+            {{item.description}}
+        </div>
+        <div class="col-md-1">
+            <span class="glyphicon glyphicon-chevron-down clickable-element" ng-click="item.showDetails = !item.showDetails"></span>
+        </div>
+    </div>
+    <div class="row col-md-12" ng-show="item.showDetails">
+        <div>
+            <label>label1:&nbsp;</label>{{item.label1}}
+        </div>
+        <div>
+            <label>label2:&nbsp;</label>{{item.label2}}
+        </div>
+        <div>
+            <label>label3:&nbsp;</label>{{item.label3 | date : "dd/MM/yyyy"}}
+        </div>
+        <div>
+            <label>label4:&nbsp;</label>{{item.label4}}
+        </div>
+    </div>
+
+</div>

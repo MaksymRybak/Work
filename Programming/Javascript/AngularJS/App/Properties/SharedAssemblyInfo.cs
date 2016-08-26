@@ -1,0 +1,8 @@
+[assembly: System.Reflection.AssemblyCopyright("")]
+[assembly: System.Reflection.AssemblyTrademark("")]
+[assembly: System.Reflection.AssemblyConfiguration("0 - n/a")]
+[assembly: System.Reflection.AssemblyInformationalVersion("0.0.1")]
+[assembly: System.Reflection.AssemblyFileVersion("0.0.1")]
+[assembly: System.Reflection.AssemblyVersion("0.0.1")]
+[assembly: System.Reflection.AssemblyProduct("App")]
+[assembly: System.Reflection.AssemblyCompany("CompanyName")]

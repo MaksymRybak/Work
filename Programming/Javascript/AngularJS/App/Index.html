@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>App</title>
+
+    <link href="libs/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="libs/selectize-0.12.2/css/selectize.css" rel="stylesheet" />
+    <link href="libs/selectize-0.12.2/css/selectize.bootstrap3.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet"/>
+</head>
+<body>
+
+    <div class="app-body" ng-view></div>
+
+    <script src="libs/jquery-3.1.0/jquery-3.1.0.min.js"></script>
+    <script src="libs/angular-1.5.7/angular.min.js"></script>
+    <script src="libs/angular-1.5.7/angular-route.min.js"></script>
+    <script src="libs/selectize-0.12.2/js/standalone/selectize.min.js"></script>
+
+    <!-- build:js dist/yoda.releaser.min.js -->
+    <script src="app/common/common.controller.js"></script>
+    <script src="app/common/common.directive.js"></script>
+    <script src="app/common/common.filter.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/feature1/feature1.controller.js"></script>
+    <script src="app/feature1/feature1.directive.js"></script>
+    <!-- /build -->
+
+</body>
+</html>
