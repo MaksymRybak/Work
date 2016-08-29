@@ -1,0 +1,3 @@
+// example
+var descrizionePattern = /^([^\W_\d])/;                                 /* lettere seguite dai numeri */
+var annoDescrizionePattern = /^([\d]*)\/([\d]*[^\W_\d]*)([\d]*)/;       /* OK ad es: 2016/123 text 123, 2016/text 123, 2016/123 text, 2016/text */
