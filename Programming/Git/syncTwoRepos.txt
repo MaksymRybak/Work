@@ -1,0 +1,5 @@
+tools\PortableGit.1.9.4\tools\bin\git -c core.autocrlf=false clone https://username:password@git.server.it/RepoSyncher.RemoteRepo.git --branch master --single-branch Repos\\RepoSyncher.RemoteRepo
+..\..\tools\PortableGit.1.9.4\tools\bin\git -c core.autocrlf=false remote set-url --push origin https://username:password@git.server.it/r/RepoSyncher.LocalRepo.git
+
+..\..\tools\PortableGit.1.9.4\tools\bin\git -c core.autocrlf=false pull origin
+..\..\tools\PortableGit.1.9.4\tools\bin\git -c core.autocrlf=false push origin master
