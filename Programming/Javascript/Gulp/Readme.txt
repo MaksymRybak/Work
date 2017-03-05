@@ -12,4 +12,4 @@ VS Code has jscs plugin
 
 Gulp instructions:
 Installed by npm - npm install gulp /g
-
+To run a task - gulp style (style is the name of task)
