@@ -13,7 +13,10 @@ VS Code has jscs plugin
 Gulp instructions:
 Installed by npm - npm install gulp /g
 To run a task - gulp style (style is the name of task)
-
+To inject js into our HTML file we should create these comment lines:
+ <!-- bower:js -->
+ <!-- endbower -->
+We can add overrides property to our bower.json file to override our dependecies bower props.
 
 Wiredep:
 installed by npm locally - npm install wiredep --save-dev
