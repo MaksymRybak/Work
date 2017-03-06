@@ -18,9 +18,14 @@ To inject js into our HTML file we should create these comment lines:
  <!-- endbower -->
 We can add overrides property to our bower.json file to override our dependecies bower props.
 
+
 Wiredep:
 installed by npm locally - npm install wiredep --save-dev
 define gulp task which uses wiredep
 wiredep will look for bower.json where it will search for dependencies
 we have to pass to wiredep the directory where to get all dependencies
 
+we can inject local dependencies using gult-inject, to install it use npm gulp-inject --save-dev
+
+we can use gulp-nodemon to monitor our files and restart the server when something changes 
+install it by typing npm install gulp-nodemon --save-dev
