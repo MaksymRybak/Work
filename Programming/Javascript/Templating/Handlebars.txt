@@ -1,0 +1,6 @@
+Handlebars
+
+Minimalist templating engine
+
+Installed typing npm install --save express-handlebars
+
