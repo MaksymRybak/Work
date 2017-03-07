@@ -1,0 +1,7 @@
+Jade
+
+We use Jade compiler to obtain final HTML
+Jade is wide and space based language
+
+Jade is installed typing npm install --save jade
+
