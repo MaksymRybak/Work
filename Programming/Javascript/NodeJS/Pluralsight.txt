@@ -10,6 +10,8 @@ pass data to external module
 use .all() to put common logic like db access, error handling
 .all() is a middleware 
 
+use body-parser package to map body or url data into json objects
+
 *** use mssql
 installed typing npm install --save mssql
 
