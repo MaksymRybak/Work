@@ -31,3 +31,10 @@ we can use passport framework
 passport will pars the cookies for authentication 
 passport uses express session, we jave pull it as first module
 we use passport-local to do local auth
+
+using passport we can do fb, google, twitter and other authentication.
+
+*** use http and xml2js
+http package to do http request from nodejs code
+xml2js to convert from xml to json
+
