@@ -24,3 +24,5 @@ we pull MongoClient, ObjectID from mongodb package
 methods find, findOne...
 we can use Mongoose ORM 
 
+*** authentication 
+we can use passport framework
