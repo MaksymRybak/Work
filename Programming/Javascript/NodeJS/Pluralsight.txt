@@ -7,11 +7,12 @@ folder for routes, src/routes
 export modules
 pass data to external module
 
+use .all() to put common logic like db access, error handling
+.all() is a middleware 
 
 use mssql
 installed typing npm install --save mssql
 
 if we open the connection in the main js file and pull mssql packege from another file, 
 we already have the connection - nodejs context persists the state globally
-
 mssql sends the result in json format
