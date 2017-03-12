@@ -28,3 +28,6 @@ we can use Mongoose ORM
 
 *** authentication 
 we can use passport framework
+passport will pars the cookies for authentication 
+passport uses express session, we jave pull it as first module
+we use passport-local to do local auth
