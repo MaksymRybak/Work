@@ -9,3 +9,9 @@ Self hosted also supported.
 
 Core idea is a composition of our application.
 
+Embrace open web development
+- npm for tooling support
+- bower for client-side library support
+- grunt and gulp for build automation
+- nuget for .net packages
+
