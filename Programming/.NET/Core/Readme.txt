@@ -15,3 +15,8 @@ Embrace open web development
 - grunt and gulp for build automation
 - nuget for .net packages
 
+Yeoman (yo) to create new projects, files, configs, etc. Works on top of nodejs and npm.
+We install yo using npm: npm install yo -g
+After that we have to install generator-aspnet.
+Type yo aspnet to create aspnet project.
+
