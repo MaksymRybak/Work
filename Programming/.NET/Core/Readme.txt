@@ -27,4 +27,10 @@ Configure method used to set up the logic executed during incoming requests
 wwwroot folder where we put files served by web server
 The order of middleware calls is important
 
- 
+ASP.NET MVC 6
+folders: Controllers, Views
+files: *.cshtml
+class and interfaces: Controller, IActionResult
+We have to add MVC to Startup of our project (Configure and ConfigureServices methods)
+Add routes mapped to controllers.
+Use views to split FE/UI layouts.
