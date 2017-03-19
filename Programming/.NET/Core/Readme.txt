@@ -20,3 +20,7 @@ We install yo using npm: npm install yo -g
 After that we have to install generator-aspnet.
 Type yo aspnet to create aspnet project.
 
+Create new web project typing dotnet new web
+Kestrel is a web server
+IISIntegration for authentication
+Configure method used to set up the logic executed during incoming requests
