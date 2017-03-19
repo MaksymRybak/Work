@@ -40,5 +40,7 @@ We use IHostingEnvironment to get the current env (dev, staging, prod, etc.). St
 TagHelpers. Inject tag helpers in _ViewImports.cshtml. 
 Binding model to view using @model
 MVC 6 validations: attributes in our model. Hook validation to our UI using tag helpers and jquery validate. So we have validation on the client and server sides.
+Using Startup.ConfigureServices() to inject dependencies like service classes. Transient, scoped, singleton instances.
+We use config.json to save app's configuration. We can override config using env variables in our launch.json. 
 
 
