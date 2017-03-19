@@ -29,8 +29,16 @@ The order of middleware calls is important
 
 ASP.NET MVC 6
 folders: Controllers, Views
-files: *.cshtml
+files: *.cshtml, _ViewImports.cshtml, _ViewStart.cshtml
 class and interfaces: Controller, IActionResult
 We have to add MVC to Startup of our project (Configure and ConfigureServices methods)
 Add routes mapped to controllers.
 Use views to split FE/UI layouts.
+If the app throws the exception, FE receives error 500.
+Use UseDeveloperExceptionPage to see errors in the dev env.
+We use IHostingEnvironment to get the current env (dev, staging, prod, etc.). Startup class.
+TagHelpers. Inject tag helpers in _ViewImports.cshtml. 
+Binding model to view using @model
+MVC 6 validations: attributes in our model. Hook validation to our UI using tag helpers and jquery validate. So we have validation on the client and server sides.
+
+
