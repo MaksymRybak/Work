@@ -24,3 +24,7 @@ Create new web project typing dotnet new web
 Kestrel is a web server
 IISIntegration for authentication
 Configure method used to set up the logic executed during incoming requests
+wwwroot folder where we put files served by web server
+The order of middleware calls is important
+
+ 
