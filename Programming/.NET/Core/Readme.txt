@@ -43,4 +43,9 @@ MVC 6 validations: attributes in our model. Hook validation to our UI using tag 
 Using Startup.ConfigureServices() to inject dependencies like service classes. Transient, scoped, singleton instances.
 We use config.json to save app's configuration. We can override config using env variables in our launch.json. 
 
+Using MVC6 to create REST endpoints
+Create API Controller. We have the same base class (Controller) for Web and Api Controllers.
+We decide what to return.
+
+
 
