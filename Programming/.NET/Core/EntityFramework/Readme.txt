@@ -12,4 +12,10 @@ Create and update DB's schema. We use so cold ef Tools.
 Seeding database.
 Insert data.
 
+Repository pattern.
+We use repository classes with it's own interfaces.
+
+Logging
+We use microsoft extensions.
+
 
