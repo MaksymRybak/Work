@@ -53,6 +53,8 @@ Convert our viewmodel (aka dto) in model using AutoMapper. Direct and reverse ma
 Mapping collections.
 Setting up logging.
 We can make controller's methods asynchronous, using async and await and Task.
+Some examples to make rest calls to external apis. Used HttpClient and linq to json.
+
 
 
 
