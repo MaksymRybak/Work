@@ -55,6 +55,14 @@ Setting up logging.
 We can make controller's methods asynchronous, using async and await and Task.
 Some examples to make rest calls to external apis. Used HttpClient and linq to json.
 
+ASP.NET Identity
+Using Cookies, OAuth2, etc.
+It's pluggable.
+Store authorization using EF. IdentityDbContet, IdentityUser, UserManager. Create migration with identity objects (AspNetUsers, AspNetRoles, AspNetUserLogins, AspNetUserRoles, etc.) using dotnet ef migration module. Update db schema applying new migration.
+Configuring Identity. services.AddIdentity(). Config cookies settings. 
+Login path will contains ReturnUrl. We'll be redirected to the original path after login in.
+
+
 
 
 
