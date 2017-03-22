@@ -58,9 +58,10 @@ Some examples to make rest calls to external apis. Used HttpClient and linq to j
 ASP.NET Identity
 Using Cookies, OAuth2, etc.
 It's pluggable.
-Store authorization using EF. IdentityDbContet, IdentityUser, UserManager. Create migration with identity objects (AspNetUsers, AspNetRoles, AspNetUserLogins, AspNetUserRoles, etc.) using dotnet ef migration module. Update db schema applying new migration.
+Store authorization using EF. IdentityDbContet, IdentityUser, UserManager, SignInManager. Create migration with identity objects (AspNetUsers, AspNetRoles, AspNetUserLogins, AspNetUserRoles, etc.) using dotnet ef migration module. Update db schema applying new migration.
 Configuring Identity. services.AddIdentity(). Config cookies settings. 
 Login path will contains ReturnUrl. We'll be redirected to the original path after login in.
+We can configure Mvc to use Https. So, if we digit http, we'll be redirected to https.
 
 
 
