@@ -49,6 +49,11 @@ We decide what to return.
 Get, Post requests. 
 We can do validations using ModelState methods. Like in View. It will validate our [FromBody] parameter.
 Validation attributes used in dto/cmd.
+Convert our viewmodel (aka dto) in model using AutoMapper. Direct and reverse mappers.
+Mapping collections.
+Setting up logging.
+We can make controller's methods asynchronous, using async and await and Task.
+
 
 
 
