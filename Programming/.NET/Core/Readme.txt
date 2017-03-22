@@ -46,6 +46,9 @@ We use config.json to save app's configuration. We can override config using env
 Using MVC6 to create REST endpoints
 Create API Controller. We have the same base class (Controller) for Web and Api Controllers.
 We decide what to return.
+Get, Post requests. 
+We can do validations using ModelState methods. Like in View. It will validate our [FromBody] parameter.
+Validation attributes used in dto/cmd.
 
 
 
