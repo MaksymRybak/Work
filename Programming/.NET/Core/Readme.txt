@@ -66,4 +66,25 @@ Securing API - cookie auth (only for app's clients), OAuth2 and Open ID Connect 
 Using Identity in API calls. Add Authorize attribute to the controller -> we get all methods authenticated. User.Identity object used to get user's data.
 
 
+Deploying ASP.NET Core
+- minifying JS using gulp (task manager)
+	add package.json (npm configuration file), supported by VS!
+		add gulp to dev dep of package.json
+		add gulp-uglify -//-
+		add gulp-ng-annotate -//-
+	add gulp config. file (gulpfile.js)
+		new task 'minify'
+		set folder with *.js files to minify
+		set folder where to write the result
+(VS has task runner for gulp)
+- we can use environment razor tag to inject the correct version of JSs (eg minified verion only in Production and Staging env).
+- set prepublish scripts (npm install, bower install)
+- set prepare scripts (gulp minify)
+- publish using VS
+- OR publish using command line (scriptable publishing!), dotnet publish /o "dest folder"
+- we have all dlls (our site is sitename.dll) and static files published
+- run typing dotnet sitename.dll
+
+
+
 
