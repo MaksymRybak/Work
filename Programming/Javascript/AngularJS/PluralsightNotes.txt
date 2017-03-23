@@ -1,0 +1,9 @@
+Pluralsight notes
+
+app
+controller
+repeater
+form (ng-submit)
+model
+validating form - require, ng-minlength, ng-disabled, form.$invalid, $error
+services - http
