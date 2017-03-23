@@ -1,9 +1,21 @@
 Pluralsight notes
 
-app
+app module
 controller
 repeater
 form (ng-submit)
 model
 validating form - require, ng-minlength, ng-disabled, form.$invalid, $error
-services - http
+services - http (get().then().finally(), post().then().finally())
+directive - inject new directive into app's module. Directive's scope.
+routing - new package angular-route
+	config method of app's module
+	$routeProvider
+	creating views (ng-view)
+	everything after # in the path is client side routing
+	ng-href
+	$routeParams
+	
+
+
+
