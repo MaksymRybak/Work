@@ -83,6 +83,7 @@ Deploying ASP.NET Core
 - publish using VS
 - OR publish using command line (scriptable publishing!), dotnet publish /o "dest folder"
 - we have all dlls (our site is sitename.dll) and static files published
+- NOTE: we can publish the app with runtime, so we don't have to install the runtime on destinataion machine. Version app with runtime.
 - run typing dotnet sitename.dll
 
 
