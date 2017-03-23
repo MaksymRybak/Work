@@ -62,9 +62,8 @@ Store authorization using EF. IdentityDbContet, IdentityUser, UserManager, SignI
 Configuring Identity. services.AddIdentity(). Config cookies settings. 
 Login path will contains ReturnUrl. We'll be redirected to the original path after login in.
 We can configure Mvc to use Https. So, if we digit http, we'll be redirected to https.
-
-
-
+Securing API - cookie auth (only for app's clients), OAuth2 and Open ID Connect (OIDC) - safer and support non JS clients. Cookie auth event - return 401 for API call (if path starts with /api), otherwise redirect to RedirectUrl. 
+Using Identity in API calls. Add Authorize attribute to the controller -> we get all methods authenticated. User.Identity object used to get user's data.
 
 
 
