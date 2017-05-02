@@ -7,8 +7,13 @@ Elastic Block Storage - storage.
 Security group - aka firewall. To allow access between EC2 instances, allow access to Databases, accept HTTP requests.
 
 S3 - Simple Storage Service
-
+To store files, max file size is 5TB.
+We create buckets.
+We can host static websites.
 
 RDS - Relational Database Service
+
+
 Route53 - DNS service
 
+Cloud Front
