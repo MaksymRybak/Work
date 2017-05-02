@@ -12,8 +12,11 @@ We create buckets.
 We can host static websites.
 
 RDS - Relational Database Service
-
+Take snapshots. Security control using security groups.
+Config access from EC2 instance.
+NoSQL database as DynamoDB and Redshift.
 
 Route53 - DNS service
+
 
 Cloud Front
