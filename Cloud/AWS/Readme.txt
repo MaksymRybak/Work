@@ -75,3 +75,16 @@ Every distribution has unique Url to use for retrieving content.
 Pay for outgoing data based on the region.
 
 USING AWS WEB CONSOLE
+Use resource group to group our AWS resources by type or scope of usages.
+Select region for resources.
+Etc..
+
+SOFTWARE DEVELOPMENT KITs
+Code interacting with the cloud.
+SDKs for inegrate AWS services to our application.
+Every project is opensourced and hosted on github.com/aws.
+AWS SDK wraps HTTP requests to aws endpoints.
+Almost every operations we can perform from web console we can also perform using AWS SDK.
+(eg modify cloudwatch rules, invalidate cloudfront distribution, read/write to RDS).
+
+COMMAND LINE INTERFACE (CLI)
