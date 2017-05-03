@@ -88,3 +88,8 @@ Almost every operations we can perform from web console we can also perform usin
 (eg modify cloudwatch rules, invalidate cloudfront distribution, read/write to RDS).
 
 COMMAND LINE INTERFACE (CLI)
+See AWS CLI command reference for details.
+We can install AWS CLI on our system.
+aws configure - initial command to configure CLI.
+We use CLI to execute commands on our AWS services. Like with SDK, we can execute almost everything what we can do from web console. 
+Very powerfull when we write shell scripts.
