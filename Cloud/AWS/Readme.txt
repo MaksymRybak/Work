@@ -11,16 +11,21 @@ Security group - aka firewall. To allow access between EC2 instances, allow acce
 To store files, max file size is 5TB.
 We create buckets.
 We can host static websites.
+We pay for storage and numbers of read and writes.
 
 3) RDS - Relational Database Service
+We can create these Dbs: MySql, PostgreSQL, SQL Server, MariaDB, Oracle, Amazon Aurora.
+RDS runs on EC2 instance.
 Take snapshots. Security control using security groups.
 Config access from EC2 instance.
 NoSQL database as DynamoDB and Redshift.
+Pay for EC2 on which we run RDS + licence part if we use SQL Server or other commercial DB.
 
 4) Route53 - DNS service
 We can setup domain and subdomains.
 We can buy a new domain name.
 Add domain records.
+Pay 0.5 EUR per month + num. of queries to DNS.
 
 5) Elastik Beanstalk
 Used to deploy code on EC2
@@ -46,6 +51,7 @@ We can push data to RedShift from RDS, DynamoDB, S3 to simplfy future analysis.
 Data is pushed to RedShift using Data Pipeline ETL process.
 Based on cluster (many nodes)
 Good security settings.
+Pay for every node that is EC2.
 
 8) VPC - Virtual Private Cloud
 To increase security of our resources on AWS.
@@ -68,4 +74,4 @@ We define distribution and specify original location (eg S3).
 Every distribution has unique Url to use for retrieving content.
 Pay for outgoing data based on the region.
 
-
+USING AWS WEB CONSOLE
