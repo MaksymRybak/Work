@@ -34,6 +34,7 @@ NOTA: ELASTIC BEANSTALK IS FREE SERVICE, WE ONLY PAY FOR EC2, S3 AND LOAD BALANC
 
 6) DynamoDB
 NoSQL Database. KeyValue store.
+Base object is Table.
 We read and write 4KB / unit.
 First 25GB of stored data is free.
 We pay for num. of reads and writes.
@@ -53,4 +54,18 @@ VPC can include public and private subnets.
 Request flow: Internet -> Routing table (control what goes where) -> Network ACL (Access Control List) to control who can come and go -> VPC
 Basic VPC configuration is FREE.
 
-9) Cloud Front - CDN service
+9) Cloud Watch 
+Used for monitoring of AWS resources (EC2, DynamoDB, S3, Route53, RedShift)
+We can set metrics and threshold.
+When something happened we will be notified by SMS or Email or we can program some auto scaling operations.
+We can install awslogs agent on EC2 and configure to send logs to Cloud Watch.
+Filter logs and send notifications when some specific event has occurred.
+We pay for alarms, ingesting logs, archived logs, dashboards.
+
+10) Cloud Front - CDN service
+Cloud Front works with EC2, S3, Load Balancers, Route53.
+We define distribution and specify original location (eg S3).
+Every distribution has unique Url to use for retrieving content.
+Pay for outgoing data based on the region.
+
+
