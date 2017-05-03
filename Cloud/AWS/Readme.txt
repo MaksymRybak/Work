@@ -22,4 +22,35 @@ We can setup domain and subdomains.
 We can buy a new domain name.
 Add domain records.
 
-5) Cloud Front - CDN service
+5) Elastik Beanstalk
+Used to deploy code on EC2
+Easy deploy with various tools.
+Set it and forget it configuration.
+Aggregated monitoring and logging.
+We can deploy different versions on different environments (Test, Production).
+Application versions are stored in S3 bucket.
+Monitoring tools to see CPU, Number of requests and Network traffic.
+NOTA: ELASTIC BEANSTALK IS FREE SERVICE, WE ONLY PAY FOR EC2, S3 AND LOAD BALANCERS.
+
+6) DynamoDB
+NoSQL Database. KeyValue store.
+We read and write 4KB / unit.
+First 25GB of stored data is free.
+We pay for num. of reads and writes.
+
+7) RedShift
+Data warehousing solution.
+For BI tools. 
+We can push data to RedShift from RDS, DynamoDB, S3 to simplfy future analysis.
+Data is pushed to RedShift using Data Pipeline ETL process.
+Based on cluster (many nodes)
+Good security settings.
+
+8) VPC - Virtual Private Cloud
+To increase security of our resources on AWS.
+We can configure Routing tables, NAT gateways, internal IP address allocation.
+VPC can include public and private subnets.
+Request flow: Internet -> Routing table (control what goes where) -> Network ACL (Access Control List) to control who can come and go -> VPC
+Basic VPC configuration is FREE.
+
+9) Cloud Front - CDN service
