@@ -5,11 +5,12 @@
 	http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<bean name="customerRepository" 
-		  class="com.pluralsight.repository.HibernateCustomerRepositoryImpl" />
+		  class="com.pluralsight.repository.HibernateCustomerRepositoryImpl" /> 
 	
 	<bean name="customerService"
-	 	  class="com.pluralsight.service.CustomerServiceImpl">
-		<property name="customerRepository" ref="customerRepository"></property>
+	 	  class="com.pluralsight.service.CustomerServiceImpl" autowire="constructor">
+		<!-- <constructor-arg index="0" ref="customerRepository" />-->
+		
 	 </bean>
 
 </beans>
