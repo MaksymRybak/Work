@@ -2,7 +2,6 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import com.pluralsight.service.CustomerService;
-import com.pluralsight.service.CustomerServiceImpl;
 
 public class Application {
 
