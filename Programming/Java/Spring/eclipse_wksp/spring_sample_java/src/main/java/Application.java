@@ -12,6 +12,10 @@ public class Application {
 		//CustomerService service = new CustomerServiceImpl();
 		
 		CustomerService customerService = appContext.getBean("customerService", CustomerService.class);
+		System.out.println(customerService);
+		
+		CustomerService customerService2 = appContext.getBean("customerService", CustomerService.class);
+		System.out.println(customerService2);
 		
 		System.out.println(customerService.findAll().get(0).getFirstName());
 		
