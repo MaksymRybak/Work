@@ -11,7 +11,7 @@ import com.pluralsight.model.Customer;
 import com.pluralsight.repository.CustomerRepository;
 
 @Service("customerService")
-@Scope(ConfigurableBeanFactory.SCOPE_SINGLETON)
+@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public class CustomerServiceImpl implements CustomerService {
 
 	@Autowired

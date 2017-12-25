@@ -10,7 +10,7 @@
 	<bean name="customerService"
 	 	  class="com.pluralsight.service.CustomerServiceImpl" 
 	 	  autowire="constructor"
-	 	  scope="singleton">
+	 	  scope="prototype">
 	 	  
 		<!-- <constructor-arg index="0" ref="customerRepository" />-->
 		
