@@ -22,6 +22,7 @@ public class WebAppInitializer implements WebApplicationInitializer {
 		dispatcher.addMapping("*.html");
 		dispatcher.addMapping("*.pdf");
 		dispatcher.addMapping("*.css");
+		dispatcher.addMapping("*.json");
 	}
 
 	private WebApplicationContext getContext() {
