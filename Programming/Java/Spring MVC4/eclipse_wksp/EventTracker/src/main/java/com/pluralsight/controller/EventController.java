@@ -2,6 +2,7 @@ package com.pluralsight.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -16,6 +17,13 @@ public class EventController {
 		event.setName("Java User group");
 		model.addAttribute("event", event);
 		
+		return "event";
+	}
+	
+	@RequestMapping(value = "/event", method = RequestMethod.POST)
+	public String processEvent(@ModelAttribute("event") Event event) {
+		System.out.println(event);
+	
 		return "event";
 	}
 	
