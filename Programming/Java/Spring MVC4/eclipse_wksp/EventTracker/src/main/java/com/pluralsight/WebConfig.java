@@ -23,6 +23,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 	
 	@Bean
 	public MessageSource messageSource() {
+		//mry note: this bean is autowired by name
 		ResourceBundleMessageSource messageSource = new ResourceBundleMessageSource();
 		messageSource.setBasename("messages");
 		return messageSource;
@@ -30,6 +31,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 	
 	@Bean
 	public LocaleResolver localeResolver() {
+		//mry note: this bean is autowired by name
 		SessionLocaleResolver localResolver = new SessionLocaleResolver();
 		localResolver.setDefaultLocale(Locale.ENGLISH);
 		return localResolver;
