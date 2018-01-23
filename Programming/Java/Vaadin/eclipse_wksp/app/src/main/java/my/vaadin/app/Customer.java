@@ -1,8 +1,11 @@
 package my.vaadin.app;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Customer {
+@SuppressWarnings("serial")
+public class Customer implements Serializable, Cloneable {
+
 	private Date birthDate;
 
 	private String email = "";
