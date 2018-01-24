@@ -13,6 +13,7 @@ import com.vaadin.server.VaadinServlet;
 import com.vaadin.ui.Button;
 import com.vaadin.ui.CssLayout;
 import com.vaadin.ui.Grid;
+import com.vaadin.ui.HorizontalLayout;
 import com.vaadin.ui.TextField;
 import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
@@ -33,6 +34,7 @@ public class MyUI extends UI {
 	private CustomerService service = CustomerService.getInstance();
 	private Grid grid = new Grid();
 	private TextField filterText = new TextField();
+	private CustomerForm form = new CustomerForm(this);
 
 	@Override
 	protected void init(VaadinRequest vaadinRequest) {
@@ -59,12 +61,18 @@ public class MyUI extends UI {
 		filtering.addComponents(filterText, clearFilterTextBtn);
 		filtering.setStyleName(ValoTheme.LAYOUT_COMPONENT_GROUP);
 
-		layout.addComponents(filtering, grid);
+		HorizontalLayout main = new HorizontalLayout(grid, form);
+		main.setSpacing(true);
+		main.setSizeFull();
+		grid.setSizeFull();
+		main.setExpandRatio(grid, 1);
+
+		layout.addComponents(filtering, main);
 		layout.setMargin(true);
 		setContent(layout);
 	}
 
-	private void updateList() {
+	public void updateList() {
 		List<Customer> customers = service.findAll(filterText.getValue());
 		grid.setContainerDataSource(new BeanItemContainer<>(Customer.class, customers));
 	}
