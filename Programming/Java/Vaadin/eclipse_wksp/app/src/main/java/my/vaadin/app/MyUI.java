@@ -57,17 +57,37 @@ public class MyUI extends UI {
 			updateList();
 		});
 		
+		Button addCustomerBtn = new Button("Add new customer");
+		addCustomerBtn.addClickListener(e -> {
+		    grid.select(null);
+		    form.setCustomer(new Customer());
+		});
+		
 		CssLayout filtering = new CssLayout();
 		filtering.addComponents(filterText, clearFilterTextBtn);
 		filtering.setStyleName(ValoTheme.LAYOUT_COMPONENT_GROUP);
 
+		HorizontalLayout toolbar = new HorizontalLayout(filtering, addCustomerBtn);
+		toolbar.setSpacing(true);
+		
+		form.setVisible(false);
+		
 		HorizontalLayout main = new HorizontalLayout(grid, form);
 		main.setSpacing(true);
 		main.setSizeFull();
 		grid.setSizeFull();
 		main.setExpandRatio(grid, 1);
+		
+		grid.addSelectionListener(event -> {
+		    if (event.getSelected().isEmpty()) {
+		        form.setVisible(false);
+		    } else {
+		        Customer customer = (Customer) event.getSelected().iterator().next();
+		        form.setCustomer(customer);
+		    }
+		});
 
-		layout.addComponents(filtering, main);
+		layout.addComponents(toolbar, main);
 		layout.setMargin(true);
 		setContent(layout);
 	}
